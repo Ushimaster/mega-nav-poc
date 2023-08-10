@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/MegaNav/.vs/MegaNav
+/src/PoC.MegaNav.Api/bin/Debug/net7.0
+/src/PoC.MegaNav.Api/obj
+/src/.vs/MegaNav
