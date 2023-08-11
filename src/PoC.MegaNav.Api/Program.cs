@@ -13,6 +13,12 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+app.UseCors(config =>
+{
+    config.AllowAnyHeader()
+          .AllowAnyMethod()
+          .AllowAnyOrigin();
+});
 
 app.MapGet("api/menu/admin/ao/learner", () =>
 {
