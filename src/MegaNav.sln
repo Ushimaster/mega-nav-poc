@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33927.249
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoC.MegaNav.Api", "PoC.MegaNav.Api\PoC.MegaNav.Api.csproj", "{AAB29E8D-1ADC-492A-A7E5-92D97FE21AAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoC.MegaNav.Web", "PoC.MegaNav.Web\PoC.MegaNav.Web.csproj", "{73E7199D-B023-45C5-A627-4D4706BAD8D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AAB29E8D-1ADC-492A-A7E5-92D97FE21AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB29E8D-1ADC-492A-A7E5-92D97FE21AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB29E8D-1ADC-492A-A7E5-92D97FE21AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E7199D-B023-45C5-A627-4D4706BAD8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E7199D-B023-45C5-A627-4D4706BAD8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E7199D-B023-45C5-A627-4D4706BAD8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E7199D-B023-45C5-A627-4D4706BAD8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,3 +7,5 @@
 /src/PoC.MegaNav.Api/bin/Debug/net7.0
 /src/PoC.MegaNav.Api/obj
 /src/.vs/MegaNav
+/src/PoC.MegaNav.Web/bin
+/src/PoC.MegaNav.Web/obj/Debug
