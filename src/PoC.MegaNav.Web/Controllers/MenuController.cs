@@ -11,7 +11,7 @@ namespace PoC.MegaNav.Web.Controllers
     public class MenuController : Controller
     {
         [ChildActionOnly]
-        public PartialViewResult _Menu()
+        public PartialViewResult Menu()
         {
             var client = new HttpClient();
             HttpResponseMessage response = client.GetAsync("https://localhost:7084/api/menu/learner/").GetAwaiter().GetResult();

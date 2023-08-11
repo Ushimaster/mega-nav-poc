@@ -1,9 +1,6 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+﻿<main aria-labelledby="title">
+    <h2 id="title">Contact</h2>
+    <h3></h3>
 
     <address>
         One Microsoft Way<br />
