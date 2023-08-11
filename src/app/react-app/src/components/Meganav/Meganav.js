@@ -11,10 +11,10 @@ const Meganav = (props) => {
   let menuItemsParent;
 
   if (props.menuItems)
-    menuItemsParent = props.menuItems.filter((item) => !item.parent);
+    menuItemsParent = props.menuItems.filter((item) => !item.parentId);
 
   const menuChangeHandler = (menu) => {
-    const toggles = props.menuItems.filter((item) => item.parent === menu.id);
+    const toggles = props.menuItems.filter((item) => item.parentId === menu.id);
     setToggle(toggles);
   };
 

@@ -51,91 +51,91 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
         new MenuItem
         {
             Id= 1,
-            Parent= null,
+            ParentId= null,
             Title= "My Learning",
             Link= "#",
         },
         new MenuItem
         {
             Id= 2,
-            Parent= null,
+            ParentId= null,
             Title= "Live Sessions",
             Link= "#",
         },
         new MenuItem
         {
             Id= 3,
-            Parent= null,
+            ParentId= null,
             Title= "Achievements",
             Link= "#",
         },
         new MenuItem
         {
             Id= 4,
-            Parent= null,
+            ParentId= null,
             Title= "Inbox",
             Link= "#",
         },
         new MenuItem
         {
             Id= 5,
-            Parent= null,
+            ParentId= null,
             Title= "Others",
             Link= "#",
         },
         new MenuItem
         {
             Id= 100,
-            Parent= 1,
+            ParentId= 1,
             Title= "Global library",
             Link= "#",
         },
         new MenuItem
         {
             Id= 200,
-            Parent= 100,
+            ParentId= 100,
             Title= "Courses",
             Link= "#",
         },
         new MenuItem
         {
             Id= 201,
-            Parent= 100,
+            ParentId= 100,
             Title= "Learning Paths",
             Link= "#",
         },
         new MenuItem
         {
             Id= 202,
-            Parent= 100,
+            ParentId= 100,
             Title= "Brands",
             Link= "#",
         },
         new MenuItem
         {
             Id= 101,
-            Parent= 1,
+            ParentId= 1,
             Title= "Content",
             Link= "#",
         },
         new MenuItem
         {
             Id= 300,
-            Parent= 101,
+            ParentId= 101,
             Title= "Courses",
             Link= "#",
         },
         new MenuItem
         {
             Id= 301,
-            Parent= 101,
+            ParentId= 101,
             Title= "Learning Paths",
             Link= "#",
         },
         new MenuItem
         {
             Id= 302,
-            Parent= 101,
+            ParentId= 101,
             Title= "Brands",
             Link= "#",
         }
