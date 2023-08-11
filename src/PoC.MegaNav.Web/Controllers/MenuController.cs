@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Web.Mvc;
 using Newtonsoft.Json;
@@ -12,18 +11,22 @@ namespace PoC.MegaNav.Web.Controllers
         [ChildActionOnly]
         public PartialViewResult Menu()
         {
-            //var client = new HttpClient();
-            //HttpResponseMessage response = client.GetAsync("https://localhost:7084/api/menu/learner/").GetAwaiter().GetResult();
+            var model = new ApiResponse();
 
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    var json = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-            //    var items = JsonConvert.DeserializeObject<IEnumerable<MenuItem>>(json);
+            var client = new HttpClient();
+            HttpResponseMessage response = client.GetAsync("https://localhost:7084/api/menu/learner/").GetAwaiter().GetResult();
 
-            //    return PartialView(items);
-            //}
+            if (response.IsSuccessStatusCode)
+            {
+                var json = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                var items = JsonConvert.DeserializeObject<IEnumerable<MenuItem>>(json);
 
-            return PartialView(Enumerable.Empty<MenuItem>());
+                model.MenuItems = items;
+
+                return PartialView(model);
+            }
+
+            return PartialView(model);
         }
     }
 }

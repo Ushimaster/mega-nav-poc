@@ -1,7 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
-
-<%@ Import Namespace="System.Collections.Generic" %>
-<%@ Import Namespace="System.Web.Mvc" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<PoC.MegaNav.Web.Models.ApiResponse>" %>
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
     <div class="container">
@@ -12,10 +9,10 @@
         </button>
         <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
-                <% foreach (var item in Model)
+                <% foreach (var item in Model.MenuItems)
                    {
                 %>
-                        <li><a href="<%: Url.Action(item.Title, item.Link) %> class="nav-link" /></li>
+                        <li><%= Html.ActionLink(item.Title, item.Link, "Home", new { area = "" }, new { @class = "nav-link" }) %></li>
                 <%
                    }
                 %>
