@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "./App.css";
 import Meganav from "./components/Meganav/Meganav";
 
 const App = () => {
+  
+
   const menuItems = [
     {
       id: 1,
@@ -82,17 +85,20 @@ const App = () => {
       link: "#",
     },
   ];
-  console.log("data");
-  fetch("https://localhost:7084/api/menu/admin/ao/learner/manager")
-      .then((response) => {
-        console.log('entra 2');
-        response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        //this.setState({ postId: data.id });
-      });
   
+
+
+  // const [menuItems,setMenuItems]= useState();
+  // fetch("https://localhost:7084/api/menu/admin/ao/learner/manager")
+  //   .then((response) => 
+  //     response.json()
+  //   )
+  //   .then((data) => {
+  //     console.log(data);
+  //     setMenuItems(data);
+  //   });
+    
+
   return <Meganav menuItems={menuItems} />;
 };
 

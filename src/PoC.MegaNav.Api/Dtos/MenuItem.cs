@@ -4,7 +4,7 @@ public record MenuItem
 {
     public int Id { get; set; }
 
-    public MenuItem? Parent { get; set; }
+    public int? Parent { get; set; }
 
     public string Title { get; set; }
 
