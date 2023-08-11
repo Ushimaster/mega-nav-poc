@@ -11,8 +11,8 @@ const Menu = (props) => {
 
   return (
     <div className="container-fluid menu">
-      <div className="navbar-header">
-        <a className="navbar-brand logo" href="#">
+      <div className="navbar-header logo" >
+        <a className="navbar-brand logo__image" href="#">
           <img src={require("../../assets/litmos.png")} alt="Brand"/>
         </a>
       </div>
