@@ -138,6 +138,62 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
             ParentId= 101,
             Title= "Brands",
             Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 102,
+            ParentId= 1,
+            Title= "Permissions",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 300,
+            ParentId= 102,
+            Title= "Collections",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 301,
+            ParentId= 102,
+            Title= "Teams",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 302,
+            ParentId= 102,
+            Title= "Users",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 103,
+            ParentId= 2,
+            Title= "Login",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 300,
+            ParentId= 103,
+            Title= "Collections",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 301,
+            ParentId= 103,
+            Title= "Teams",
+            Link= "#",
+        },
+        new MenuItem
+        {
+            Id= 302,
+            ParentId= 103,
+            Title= "Users",
+            Link= "#",
         }
     };
 

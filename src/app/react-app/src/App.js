@@ -14,6 +14,7 @@ class App extends React.Component {
     fetch("https://localhost:7084/api/menu/admin/ao/learner/manager")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         this.setState({
           menuItems: data,
         });
