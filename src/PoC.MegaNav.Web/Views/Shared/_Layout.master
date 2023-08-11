@@ -20,7 +20,9 @@
     </asp:PlaceHolder>
 </head>
 <body>
-    <% Html.RenderAction("Menu", "Menu"); %>
+    <asp:ContentPlaceHolder runat="server" ID="Nav">
+        <% Html.RenderAction("Menu", "Menu"); %>
+    </asp:ContentPlaceHolder>
 
     <div class="container body-content">
         <asp:ContentPlaceHolder runat="server" ID="MainContent">
