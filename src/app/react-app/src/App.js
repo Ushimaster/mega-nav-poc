@@ -56,8 +56,42 @@ const App = () => {
       parent: 100,
       title: "Brands",
       link: "#",
-    }
+    },
+    {
+      id: 101,
+      parent: 1,
+      title: "Content",
+      link: "#",
+    },
+    {
+      id: 300,
+      parent: 101,
+      title: "Courses",
+      link: "#",
+    },
+    {
+      id: 301,
+      parent: 101,
+      title: "Learning Paths",
+      link: "#",
+    },
+    {
+      id: 302,
+      parent: 101,
+      title: "Brands",
+      link: "#",
+    },
   ];
+  console.log("data");
+  fetch("https://localhost:7084/api/menu/admin/ao/learner/manager")
+      .then((response) => {
+        console.log('entra 2');
+        response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        //this.setState({ postId: data.id });
+      });
   
   return <Meganav menuItems={menuItems} />;
 };

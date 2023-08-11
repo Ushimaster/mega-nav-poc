@@ -17,7 +17,7 @@ const Meganav = (props) => {
 
   return (
     <div className="meganav">
-      <nav className="navbar navbar-default meganav__navbar">
+      <nav className="navbar navbar-default navbar-inverse meganav__navbar">
         <MenuItem menuItems={menuItems} onChangeMenu={menuChangeHandler} />
       </nav>
       <div className="collapse" id="navbarToggleExternalContent">
