@@ -2,8 +2,8 @@ import "./ToggleItem.css";
 
 const ToggleItem = (props) => {
   const toggle = props.toggle;
-  const toggleItems = props.menuItems.filter((item) => item.parent === toggle.id);
-  
+  const toggleItems = props.menuItems.filter((item) => item.parentId === toggle.id);
+
   return (
     <div className="thumbnail">
       <div className="caption">
