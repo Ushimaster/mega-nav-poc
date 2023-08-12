@@ -11,6 +11,7 @@ namespace PoC.MegaNav.Web
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new WebFormViewEngine());
 
+            ReactConfig.Configure();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

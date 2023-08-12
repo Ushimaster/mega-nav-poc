@@ -20,3 +20,10 @@
         </div>
     </div>
 </nav>
+
+<div id="dvMessage"></div>
+
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.0/umd/react.development.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.0/umd/react-dom.development.js"></script>
+
+<script src="<%= Url.Content("~/Scripts/meganav.jsx") %>"></script>
