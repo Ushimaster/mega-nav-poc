@@ -51,35 +51,35 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
         new MenuItem
         {
             Id= 1,
-            ParentId= null,
+            ParentId= 0,
             Title= "My Learning",
             Link= "#",
         },
         new MenuItem
         {
             Id= 2,
-            ParentId= null,
+            ParentId= 0,
             Title= "Live Sessions",
             Link= "#",
         },
         new MenuItem
         {
             Id= 3,
-            ParentId= null,
+            ParentId= 0,
             Title= "Achievements",
             Link= "#",
         },
         new MenuItem
         {
             Id= 4,
-            ParentId= null,
+            ParentId= 0,
             Title= "Inbox",
             Link= "#",
         },
         new MenuItem
         {
             Id= 5,
-            ParentId= null,
+            ParentId= 0,
             Title= "Others",
             Link= "#",
         },
