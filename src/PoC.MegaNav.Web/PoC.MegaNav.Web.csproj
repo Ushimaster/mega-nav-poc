@@ -241,6 +241,7 @@
     <Content Include="static\js\787.b701888c.chunk.js" />
     <Content Include="static\js\main.9131ef18.js" />
     <Content Include="static\js\main.9131ef18.js.LICENSE.txt" />
+    <Content Include="Views\Test\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -262,7 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

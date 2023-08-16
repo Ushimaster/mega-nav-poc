@@ -11,6 +11,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    let id = document.getElementById("Id");
+    console.log("id",id);
     fetch("https://localhost:7084/api/menu/admin/ao/learner/manager")
       .then((response) => response.json())
       .then((data) => {

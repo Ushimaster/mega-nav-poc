@@ -113,6 +113,13 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
         },
         new MenuItem
         {
+            Id= 203,
+            ParentId= 100,
+            Title= "Test",
+            Link= "/Test/Index",
+        },
+        new MenuItem
+        {
             Id= 101,
             ParentId= 1,
             Title= "Content",
