@@ -13,5 +13,10 @@ namespace PoC.MegaNav.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult MainBar()
+        {
+            return View();
+        }
     }
 }
