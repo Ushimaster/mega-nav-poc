@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./MenuItem.css";
 
 const MenuItem = (props) => {
@@ -11,12 +10,12 @@ const MenuItem = (props) => {
   };
 
   return (
-    <li className="dropdown list">
+    <li className="dropdown menu-item">
       <a
-        className="dropdown-toggle list__item"
-        href="#"
+        className="dropdown-toggle menu-item__item"
+        href={item.link}
         data-toggle="collapse"
-        data-target="#navbarToggleExternalContent"
+        data-target="#navbarToggleMeganav"
         aria-haspopup="true"
         onClick={clickHandler}
       >

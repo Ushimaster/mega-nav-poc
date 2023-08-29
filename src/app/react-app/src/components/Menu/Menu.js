@@ -10,22 +10,11 @@ const Menu = (props) => {
   };
 
   return (
-    <div className="container-fluid menu">
-      <div className="navbar-header logo" >
-        <a className="navbar-brand logo__image" href="#">
-          <img src={require("../../assets/litmos.png")} alt="Brand"/>
-        </a>
-      </div>
-      <ul className="nav navbar-nav menu__list">
-        {menuItems.map((item) => (
-          <MenuItem
-            key={item.id}
-            item={item}
-            onChangeMenu={menuChangeHandler}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul className="nav navbar-nav menu">
+      {menuItems.map((item) => (
+        <MenuItem key={item.id} item={item} onChangeMenu={menuChangeHandler} />
+      ))}
+    </ul>
   );
 };
 

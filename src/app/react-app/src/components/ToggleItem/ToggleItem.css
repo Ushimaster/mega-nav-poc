@@ -1,8 +1,8 @@
-.menu-item__item{
+.toggle-item__item{
     color: black;
 }
 
-.menu-item{
+.toggle-item{
     list-style: none;
     padding-inline-start: 10px;
 }

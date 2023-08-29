@@ -9,4 +9,5 @@ public record MenuItem
     public string Title { get; set; }
 
     public string Link { get; set; }
+    public string ComponentType { get; set; }
 }
