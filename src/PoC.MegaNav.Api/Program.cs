@@ -46,202 +46,44 @@ app.MapGet("api/menu/admin/ao/learner", () =>
 
 app.MapGet("api/menu/admin/ao/learner/manager", () =>
 {
-    
+
     var menu = new List<MenuItem>
     {
-        new MenuItem
-        {
-            Id= 1,
-            ParentId= 0,
-            Title= "My Learning",
-            Link= "#",
-            ComponentType = "Toggle",
-            
-        },
-        new MenuItem
-        {
-            Id= 2,
-            ParentId= 0,
-            Title= "Live Sessions",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 3,
-            ParentId= 0,
-            Title= "Achievements",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 4,
-            ParentId= 0,
-            Title= "Inbox",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 5,
-            ParentId= 0,
-            Title= "Others",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 6,
-            ParentId= 0,
-            Title= "Cristhian Jaramillo",
-            Link= "#",
-            ComponentType = "DropDown",
-        },
-        new MenuItem
-        {
-            Id= 500,
-            ParentId= 6,
-            Title= "Sign out",
-            Link= "#",
-            ComponentType = "DropDown",
-        },
-        new MenuItem
-        {
-            Id= 501,
-            ParentId= 6,
-            Title= "Litmos Version 1111.2233.222",
-            Link= "#",
-            ComponentType = "Version",
-        },
-        new MenuItem
-        {
-            Id= 100,
-            ParentId= 1,
-            Title= "Global library",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 200,
-            ParentId= 100,
-            Title= "Content",
-            Link= "/Litmos/admin/globalsearch",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 201,
-            ParentId= 100,
-            Title= "Dashboard",
-            Link= "/Litmos/admin/dashboard",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 203,
-            ParentId= 100,
-            Title= "Test",
-            Link= "/Test/Index",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 101,
-            ParentId= 1,
-            Title= "Content",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 300,
-            ParentId= 101,
-            Title= "Courses",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 301,
-            ParentId= 101,
-            Title= "Learning Paths",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 302,
-            ParentId= 101,
-            Title= "Brands",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 102,
-            ParentId= 1,
-            Title= "Permissions",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 300,
-            ParentId= 102,
-            Title= "Collections",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 301,
-            ParentId= 102,
-            Title= "Teams",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 302,
-            ParentId= 102,
-            Title= "Users",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 103,
-            ParentId= 2,
-            Title= "Login",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 300,
-            ParentId= 103,
-            Title= "Collections",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 301,
-            ParentId= 103,
-            Title= "Teams",
-            Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 302,
-            ParentId= 103,
-            Title= "Users",
-            Link= "#",
-            ComponentType = "Toggle",
-        }
+                
+                new MenuItem { Id = 1, Title = "My Learning", Link = "#", ParentId = 0, ComponentType = "Toggle" },
+                new MenuItem {Id = 256, Title = "Global Library1", Link = "#", ParentId = 1, ComponentType = "Toggle" },
+                new MenuItem { Id = 2, Title = "Teams", Link = "#", ParentId = 0, ComponentType = "Toggle" },
+                new MenuItem { Id = 3, Title = "Inbox", Link = "#", ParentId = 0, ComponentType = "Toggle" },
+
+                new MenuItem {Id = 10, Title = "Global Library", Link = "#", ParentId = 2, ComponentType = "Toggle", Icon = "Library" },
+                new MenuItem {Id = 11, Title = "People", Link = "#", ParentId = 2, ComponentType = "Toggle", Icon = "Person" },
+                new MenuItem {Id = 12, Title = "Teams", Link = "#", ParentId = 2, ComponentType = "Toggle", Icon = "Teams" },
+                new MenuItem {Id = 13, Title = "Reporting", Link = "#", ParentId = 2, ComponentType = "Toggle", Icon = "References" },
+
+                new MenuItem { Id = 100, Title = "Assign Content", Link = "#", ParentId = 10, ComponentType = "Toggle" },
+                new MenuItem { Id = 101, Title = "Start Content Author", Link = "#", ParentId = 10, ComponentType = "Toggle" },
+                new MenuItem { Id = 102, Title = "Create New Course", Link = "#", ParentId = 10, ComponentType = "Toggle" },
+                new MenuItem { Id = 103, Title = "Bulk Course Completion", Link = "#", ParentId = 10, ComponentType = "Toggle" },
+                new MenuItem { Id = 104, Title = "View All Content", Link = "admin/globalsearch/GlobalSearchResultPage?ContentType=2", ParentId = 10, ComponentType = "Toggle" },
+
+                new MenuItem { Id = 105, Title = "Add People", Link = "#", ParentId = 11, ComponentType = "Toggle" },
+                new MenuItem { Id = 106, Title = "Find People", Link = "#", ParentId = 11, ComponentType = "Toggle" },
+                new MenuItem { Id = 107, Title = "Bulk Import", Link = "#", ParentId = 11, ComponentType = "Toggle" },
+                new MenuItem { Id = 108, Title = "Login Activity", Link = "#", ParentId = 11, ComponentType = "Toggle" },
+                new MenuItem { Id = 109, Title = "Marking List", Link = "#", ParentId = 11, ComponentType = "Toggle" },
+
+                new MenuItem { Id = 110, Title = "Team Admin Dashboard", Link = "#", ParentId = 12, ComponentType = "Toggle" },
+                new MenuItem { Id = 111, Title = "Create New Team", Link = "#", ParentId = 12, ComponentType = "Toggle" },
+                new MenuItem { Id = 112, Title = "Bulk Import", Link = "#", ParentId = 12, ComponentType = "Toggle" },
+                new MenuItem { Id = 113, Title = "Team Tree View", Link = "#", ParentId = 12, ComponentType = "Toggle" },
+                new MenuItem { Id = 114, Title = "All Teams", Link = "#", ParentId = 12, ComponentType = "Toggle" },
+
+                new MenuItem {Id = 115, Title = "Reporting Dashboard", Link = "#", ParentId = 13, ComponentType = "Toggle" },
+                new MenuItem {Id = 116, Title = "Reporting Engine", Link = "#", ParentId = 13, ComponentType = "Toggle" },
+                new MenuItem {Id = 117, Title = "My Scheduled Reports", Link = "#", ParentId = 13, ComponentType = "Toggle" },
+                new MenuItem {Id = 118, Title = "Compliance Quick Report", Link = "#", ParentId = 13, ComponentType = "Toggle" },
+
+                //new MenuItem { Id = 2, Title = this.ActiveUser.FullName, Link = "#", ParentId = 0, ComponentType = "DropDown" }
     };
 
     var navbar = new Navbar() { LogoUrl = "https://cdn6.aptoide.com/imgs/1/5/f/15ff1ac5b31a3caca15438887eeba278_icon.png?w=128", Menu = menu };

@@ -10,4 +10,5 @@ public record MenuItem
 
     public string Link { get; set; }
     public string ComponentType { get; set; }
+    public string Icon { get; set; }
 }
