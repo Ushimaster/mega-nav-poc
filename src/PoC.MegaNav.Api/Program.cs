@@ -44,6 +44,12 @@ app.MapGet("api/menu/admin/ao/learner", () =>
     return menu;
 });
 
+app.MapGet("api/menu/admin/ao/learner/count/{id}", (HttpRequest request) =>
+{
+    var id = request.RouteValues["id"];
+    return 10;
+});
+
 app.MapGet("api/menu/admin/ao/learner/manager", () =>
 {
     
@@ -96,7 +102,7 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
             ParentId= 0,
             Title= "Cristhian Jaramillo",
             Link= "#",
-            ComponentType = "DropDown",
+            ComponentType = "Dropdown",
         },
         new MenuItem
         {
@@ -104,7 +110,7 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
             ParentId= 6,
             Title= "Sign out",
             Link= "#",
-            ComponentType = "DropDown",
+            ComponentType = "Dropdown",
         },
         new MenuItem
         {
@@ -120,22 +126,7 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
             ParentId= 1,
             Title= "Global library",
             Link= "#",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 200,
-            ParentId= 100,
-            Title= "Content",
-            Link= "/Litmos/admin/globalsearch",
-            ComponentType = "Toggle",
-        },
-        new MenuItem
-        {
-            Id= 201,
-            ParentId= 100,
-            Title= "Dashboard",
-            Link= "/Litmos/admin/dashboard",
+            Icon="Home",
             ComponentType = "Toggle",
         },
         new MenuItem
@@ -145,6 +136,63 @@ app.MapGet("api/menu/admin/ao/learner/manager", () =>
             Title= "Test",
             Link= "/Test/Index",
             ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 1000,
+            ParentId= 203,
+            Title= "Test con",
+            Link= "/Test/Index",
+            Icon="Dashboard",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 250,
+            ParentId= 100,
+            Title= "Test 2",
+            Link= "/Test/Index",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 251,
+            ParentId= 250,
+            Title= "Test Container 2",
+            Link= "/Test/Index",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 400,
+            ParentId= 100,
+            Title= "Test 3",
+            Link= "/Test/Index",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 500,
+            ParentId= 400,
+            Title= "Test Container 2",
+            Link= "/Test/Index",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 252,
+            ParentId= 250,
+            Title= "Test Container 3",
+            Link= "/Test/Index",
+            ComponentType = "Toggle",
+        },
+        new MenuItem
+        {
+            Id= 253,
+            ParentId= 250,
+            Title= "Test Count",
+            Link= "/Test/Index",
+            ComponentType = "Count",
         },
         new MenuItem
         {
